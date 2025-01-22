@@ -1,0 +1,72 @@
+/* Mengatur gaya dasar untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Mengatur gaya untuk elemen kalkulator */
+.calculator {
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur gaya untuk area tampilan */
+.display {
+  padding: 20px;
+  text-align: right;
+  background-color: #f0f0f0;
+}
+
+/* Mengatur gaya untuk elemen operasi */
+#operation {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Mengatur gaya untuk elemen hasil */
+#result {
+  font-size: 32px;
+  color: #000;
+}
+
+/* Mengatur gaya untuk area tombol */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Mengatur gaya untuk tombol */
+.btn {
+  font-size: 18px;
+  padding: 15px;
+  background-color: #e0f7fa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Mengatur gaya khusus untuk tombol "clear" */
+.btn[data-action="clear"] {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Mengatur gaya khusus untuk tombol "=" */
+.btn[data-action="equals"] {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+/* Mengatur gaya untuk tombol saat di-hover */
+.btn:hover {
+  background-color: #b2ebf2;
+}
